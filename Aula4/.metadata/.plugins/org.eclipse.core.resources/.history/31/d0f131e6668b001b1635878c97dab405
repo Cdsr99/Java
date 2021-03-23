@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class mediaSalto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("What is your name?");
+		Scanner scan = new Scanner(System.in);
+		
+		String atleta = scan.nextLine();
+		
+		System.out.println(atleta);
+		
+		System.out.println("Insert the first jump:");
+		Integer salto1 = scan.nextInt();
+		
+		System.out.println("Insert the second jump:");
+		Integer salto2 = scan.nextInt();
+		
+		System.out.println("insert the 3° jump");
+		Integer salto3 = scan.nextInt();
+		
+		System.out.println("Insert the 4° jump");
+		Integer salto4 = scan.nextInt();
+		
+		//Média
+		System.out.println("Athlete: "+ atleta);
+		System.out.println();
+		System.out.println("Saltos " + salto1 + salto2 +salto3 + salto4);
+		System.out.println();
+
+	}
+
+}
