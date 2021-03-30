@@ -1,16 +1,25 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
+
 
 public class Votos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int vote1 = 0;
-		int vote2 = 0;
-		int vote3 = 0;
-		int vote4 = 0;
-		int vote5 = 0;
-		int vote6 = 0;
+		float vote1 = 0;
+		float vote2 = 0;
+		float vote3 = 0;
+		float vote4 = 0;
+		float vote5 = 0;
+		float vote6 = 0;
+		
+		
+		DecimalFormat f = new DecimalFormat("0.0");
+		
+
+		
+		
 		Integer vote;
 		
 		
@@ -47,19 +56,60 @@ public class Votos {
 		}
 		while(vote != 0);
 		
+		System.out.println();
+		
+		
 		System.out.println("Total of Votes:");
-		System.out.println("Square Sponge: "+vote1);
-		System.out.println("Rick: "+vote2);
-		System.out.println("Obama: "+vote3);
-		System.out.println("Bieber: "+vote4);
-		System.out.println("Null: "+vote5);
-		System.out.println("Blank: "+vote6);
+		System.out.println("1° Square Sponge: "+vote1);
+		System.out.println("2° Rick: "+vote2);
+		System.out.println("3° Obama: "+vote3);
+		System.out.println("4° Bieber: "+vote4);
+		System.out.println("5° Null: "+vote5);
+		System.out.println("6° Blank: "+vote6);
+		System.out.println();
 		
-		int porNull = vote5 / (vote1 + vote2 + vote3 + vote4)   ;
+		float total = vote1 + vote2 + vote3 + vote4 + vote5 + vote6;
+
+		float Pvote1 = porcentagem(vote1,total);
+		float Pvote2 = porcentagem(vote2,total);
+		float Pvote3 = porcentagem(vote3,total);
+		float Pvote4 = porcentagem(vote4,total);
+		float Pvote5 = porcentagem(vote5,total);
+		float Pvote6 = porcentagem(vote6,total);
 		
-		System.out.println(porNull);
+		
+		
+		System.out.println("Square Sponge: "+ f.format(Pvote1) + "%");
+		System.out.println();
 		
 
+		System.out.println("Rick: "+ f.format(Pvote2) +"%");
+		System.out.println();
+		
+
+		System.out.println("Obama: "+ f.format(Pvote3)+"%" );
+		System.out.println();
+		
+
+		System.out.println("Bieber: "+ f.format(Pvote4) +"%");
+		System.out.println();
+		
+
+		System.out.println("Null: "+ f.format(Pvote5) +"%");
+		System.out.println();
+		
+
+		System.out.println("Blank: "+ f.format(Pvote6) +"%");
+		System.out.println();
+		
+
+	}
+
+	public static float porcentagem(float voto, float total){
+
+		float porc = voto / total;
+		float porc2 = porc *100;
+		return porc2;
 	}
 
 }
