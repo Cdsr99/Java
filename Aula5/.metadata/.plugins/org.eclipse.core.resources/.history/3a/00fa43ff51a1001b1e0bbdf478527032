@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class banco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("***************** Welcome to Skyline Corp Bank **********");
+		System.out.println();
+		System.out.println("How can i help you?");
+		System.out.println("1 - Open an account");
+		System.out.println("2 - Close account");
+		System.out.println("3 - deposit");
+		System.out.println("4 - Take out");
+		System.out.println();
+		System.out.println("*********************************************************");
+		int chose = scan.nextInt();
+		scan.close();
+		
+		//cliente c1 = new cliente();
+		Scanner scan2 = new Scanner(System.in);
+		
+		switch(chose){
+
+		case 1:
+			System.out.println("Enter with your name, please.");
+			String nome = scan2.toString();
+			System.out.println("Which account would you like to open up?");
+			System.out.println("1 - Checking account");
+			System.out.println("2 - Saving account");
+			int account = scan2.nextInt();
+			String tipoConta;
+			if(account == 1) {
+				tipoConta = "Conta Corrente";
+			}else {
+				tipoConta = "Conta Poupanca";
+			}
+			
+			cliente c1 = new cliente(nome,tipoConta);
+			
+			break;
+		}
+		
+
+	}
+	
+
+
+}

@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Atividade03 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int voto = 1;
+		int op1 = 0, op2 = 0, op3 = 0, op4 = 0, nul = 0, bra = 0;
+		Integer resul;
+		
+		do {	
+			System.out.println("Escolha a opção de Voto: [1  - 2 - 3 - 4 - 5 - 6 - 0 (para terminar]: ");		
+			voto = scan.nextInt();
+			
+		switch (voto) {
+			case 1:	
+				System.out.println("você vou em José Peixoto: ");
+				op1 ++;
+				System.out.println("----------------------------------------------------------------------");
+				break;
+			case 2:		
+				System.out.println("você vou em João da Gasolina: ");
+				op2 ++;
+				System.out.println("----------------------------------------------------------------------");
+				break;
+			case 3:	
+				System.out.println("você vou em Leandro Mathias: ");
+				op3 ++;
+				System.out.println("----------------------------------------------------------------------");
+				break;
+			case 4:	
+				System.out.println("você vou em Tia da Cantina: ");
+				op4 ++;
+				System.out.println("----------------------------------------------------------------------");
+				break;
+			case 5:	
+				System.out.println("Você votou NULO: ");
+				nul ++;
+				System.out.println("----------------------------------------------------------------------");
+				break;
+			case 6:	
+				System.out.println("Seu voto foi em BRANCO: ");
+				bra ++;	
+				System.out.println("----------------------------------------------------------------------");
+				break;
+		    } 
+	  } while (voto != 0);
+	    System.out.println("Votação Encerrada. ");
+	  
+	    System.out.println("----------------------------------------------------------------------");
+	    System.out.println("Resultado da votação: ");
+	    System.out.println("Total de Votos para José Peixoto: "+ voto + op1);
+	    System.out.println("Total de Votos para João da Gasolina: "+ voto + op2);
+	    System.out.println("Total de Votos para Leandro Mathias: "+ voto + op3);
+	    System.out.println("Total de Votos para Tia da Cantina: "+ voto + op4);
+	    System.out.println("Total de Votos NULOS: "+ voto + nul);
+	    System.out.println("Total de Votos em BRANCO: "+ voto + bra);
+	    System.out.println("A percentagem de votos NULOS sobre o total de votos: "+ voto + ((op1 + op2 + op3 + op4 + nul + bra) * 1) / nul + " % ");
+	    System.out.println("A percentagem de votos BRANCOS sobre o total de votos: "+ voto + ((op1 + op2 + op3 + op4 + nul + bra) * 1) / bra + " % ");
+	    System.out.println("----------------------------------------------------------------------");
+	}
+}

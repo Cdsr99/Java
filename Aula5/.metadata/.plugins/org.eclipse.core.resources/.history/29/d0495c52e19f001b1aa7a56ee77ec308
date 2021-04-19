@@ -1,0 +1,13 @@
+
+public class banco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		cliente c1 = new cliente('Caio da SIlveirte','CC');
+		c1.setNome("Caio da Silveira");
+		c1.depositar(500);
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\caios\OneDrive\Faculdade\Unicesumar\3 Semestre\Programação I\Aula5\.metadata\.plugins\org.eclipse.jdt.core
+1939638172.index
+3132313831.index
+905206860.index
