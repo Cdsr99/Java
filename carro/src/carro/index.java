@@ -38,6 +38,7 @@ while(option != 9) {
 	System.out.println("3) Stop                                                                   *");
 	System.out.println("4) Current speed                                                          *");
 	System.out.println("5) Gas level                                                              *");
+	System.out.println("6) GPS                                                                    *");
 	System.out.println("9) Exit                                                                   *");
 	System.out.println("***************************************************************************");
 	
@@ -63,6 +64,23 @@ while(option != 9) {
 		break;
 	case 5:
 		System.out.println("still in development");
+		break;
+		
+	case 6:
+		System.out.println("*********************************** GPS ***************************");
+		System.out.println("1) Drive me home                                                  *");
+		System.out.println("2) Other option                                                   *");
+		System.out.println("*******************************************************************");
+		
+		option = scan.nextInt();
+		
+		switch(option) {
+		case 1:
+			System.out.println("Heading "+ e1.getEndereco());
+			break;
+		}
+		
+		
 		break;
 	default:
 		System.out.println("Enter with another number this one isn't an option!");
