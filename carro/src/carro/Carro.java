@@ -8,28 +8,21 @@ public class Carro {
 	private String cor;
 	private String proprietario;
 	private int marcha;
-	
-	
 	private int ano;
-	
 	private int chassi;
-
-	private int velocidadeMax;
+	private int velocidadeMax = 120;
 	private int velocidadeAtual;
 	private int numeroPortas;
 	private String teto; 
 	private String automatico;
 	private int tanque;
+	private int cpf;
+		
 	
-	
-	
-	
-	
-	
-	
-	public Carro(String proprietario) {
+	public Carro(String proprietario, int cpf) {
 		
 		this.proprietario = proprietario;
+		this.cpf = cpf;
 	}
 	
 	public String getModelo() {
@@ -55,7 +48,29 @@ public class Carro {
 	}
 	public void setCor(String cor) {
 		this.cor = cor;
-	}	
+	}
+	public void setVelocidade(int vel) {
+		this.velocidadeAtual = vel;
+	}
+
+	public int getVelocidadeMax() {
+		return velocidadeMax;
+	}
+
+	public int getVelocidadeAtual() {
+		return velocidadeAtual;
+	}
+
+	public void setVelocidadeAtual(int velocidadeAtual) {
+		if(velocidadeAtual <= this.velocidadeMax) {
+			this.velocidadeAtual = velocidadeAtual;	
+		}else {
+			System.out.println("Max Speed Limit! It cannot speed up!");
+		}
+		
+	}
+
+	
 	
 	
 

@@ -1,8 +1,14 @@
 package carro;
 
-class  endereco extends proprietario{
+public class endereco{
 	
-
+	private String endereco;
+	private String cidade;
+	private String bairro;
+	private String estado;
+	private int cep;
+	private String complemento;
+	
 	public String getEndereco() {
 		return endereco;
 	}
@@ -39,10 +45,5 @@ class  endereco extends proprietario{
 	public void setComplemento(String complemento) {
 		this.complemento = complemento;
 	}
-	private String endereco;
-	private String cidade;
-	private String bairro;
-	private String estado;
-	private int cep;
-	private String complemento;
+	
 }
