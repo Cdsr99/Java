@@ -75,16 +75,12 @@ public class Endereco {
 	//*********************************************************************************************
 	
 	public void rotaCasa() {
-		
+		 
 		System.out.println("Direcionando a rota para o endereço: " + this.getRua() + " no bairro: " + this.getBairro());
 		System.out.println("....");
-		System.out.println();
 		System.out.println("...");
-		System.out.println();
 		System.out.println("..");
-		System.out.println();
 		System.out.println(".");
-		System.out.println();
 		System.out.println("CEP: " + this.getCep());
 	}
 	

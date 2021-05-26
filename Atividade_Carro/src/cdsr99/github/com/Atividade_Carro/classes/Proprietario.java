@@ -6,7 +6,7 @@ public class Proprietario {
 	private String cpf;
 	private Integer idade;
 	
-	
+	 
 	public Proprietario(String nome, String cpf) {
 		super();
 		this.nome = nome;

@@ -12,7 +12,7 @@ private Proprietario proprietario;
 private Integer velocidadeMaxima = 200;
 private Integer velocidadeAtual = 0;
 private Integer numeroMarchas;
-private Integer marchaAtual = 1;
+private Integer marchaAtual = 0;
 private Integer volumeCombustivel;
 
 private boolean temTetoSolar;
@@ -152,7 +152,7 @@ public void setTemTetoSolar(boolean temTetoSolar) {
 
 
 public boolean isTemCambioAutomatico() {
-	return temCambioAutomatico;
+	return temCambioAutomatico; 
 }
 
 
@@ -164,12 +164,26 @@ public void setTemCambioAutomatico(boolean temCambioAutomatico) {
 // *****************************************************************************************************
 
 public void acelerar() {
-	if(this.getVelocidadeAtual() < this.getVelocidadeMaxima()) {
-		this.setVelocidadeAtual(this.getVelocidadeAtual() + 1);
-		System.out.println("Acelerando: " + this.getVelocidadeAtual() + " de " + this.getVelocidadeMaxima() );
+	if(this.getMarchaAtual() > this.getNumeroMarchas()) {
+		System.out.println("Boooooooooooooooooooooooooooooom, foice o motô");
 	}else {
-		System.out.println("Velocidade Maxima atingida!!");
+		if(this.getVelocidadeAtual() % 5 == 0 ) {
+			aumentaMarcha();
+			this.setVelocidadeAtual(this.getVelocidadeAtual() + 1);
+			System.out.println("Acelerando: " + this.getVelocidadeAtual() + " de " + this.getVelocidadeMaxima() );
+			
+		}else {
+			if(this.getVelocidadeAtual() < this.getVelocidadeMaxima()) {
+				this.setVelocidadeAtual(this.getVelocidadeAtual() + 1);
+				System.out.println("Acelerando: " + this.getVelocidadeAtual() + " de " + this.getVelocidadeMaxima() );
+			}else {
+				System.out.println("Velocidade Maxima atingida!!");
+			}
+		}
 	}
+
+	
+
 }
 
 public void reduzir() {
