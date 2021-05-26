@@ -197,7 +197,7 @@ public void reduzMarcha() {
 	if(this.getMarchaAtual() < this.getNumeroMarchas()) {
 		System.out.println("Numero de marchar no minimo, suba as marchas");
 	}else {
-		this.setMarchaAtual(this.getMarchaAtual() + 1);
+		this.setMarchaAtual(this.getMarchaAtual() - 1);
 		System.out.println("Marcha atual: " + this.getMarchaAtual());
 	}
 }
