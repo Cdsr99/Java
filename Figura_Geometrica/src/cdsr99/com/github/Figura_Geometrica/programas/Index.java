@@ -2,6 +2,7 @@ package cdsr99.com.github.Figura_Geometrica.programas;
 
 import java.util.Scanner;
 
+import cdsr99.com.github.Figura_Geometrica.classes.Quadrado;
 import cdsr99.com.github.Figura_Geometrica.classes.Triangulo;
 
 
@@ -73,6 +74,28 @@ public class Index {
 			break;
 			
 		case 2:
+			
+			Quadrado FigQuadrado = new Quadrado();
+			
+			Float la1;
+
+			
+			//System.out.println("A área do triangulo é: "+ fig.CalcularL2(5f, 23f));
+			System.out.println("Enter with the side of the square");
+			System.out.println();
+			
+			System.out.println("side 1:");
+			System.out.println();
+			la1 = scan.nextFloat();
+			FigQuadrado.setL1(la1);
+			
+			
+			System.out.println("Square Status: ");
+			System.out.println();
+			System.out.println("Area: "+ FigQuadrado.CalcularArea());
+			System.out.println();
+			System.out.println("Perimeter: "+ FigQuadrado.CalcularPerimetro());
+			
 			break;
 			
 		case 3:
