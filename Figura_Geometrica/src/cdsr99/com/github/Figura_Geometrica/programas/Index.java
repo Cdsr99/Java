@@ -2,7 +2,9 @@ package cdsr99.com.github.Figura_Geometrica.programas;
 
 import java.util.Scanner;
 
+
 import cdsr99.com.github.Figura_Geometrica.classes.Quadrado;
+import cdsr99.com.github.Figura_Geometrica.classes.Retangulo;
 import cdsr99.com.github.Figura_Geometrica.classes.Triangulo;
 
 
@@ -99,9 +101,33 @@ public class Index {
 			break;
 			
 		case 3:
+			
+			Retangulo FigRetangulo = new Retangulo();
+			
+			System.out.println("Enter with the data of the retangulo");
+			System.out.println();
+			
+			System.out.println("Width:");
+			System.out.println();
+			la1 = scan.nextFloat();
+			FigRetangulo.setW(la1);
+			System.out.println();
+			
+			System.out.println("length:");
+			System.out.println();
+			la1 = scan.nextFloat();
+			FigRetangulo.setL(la1);
+			
+			
+			System.out.println("Retangulo Status: ");
+			System.out.println();
+			System.out.println("Area: "+ FigRetangulo.CalcularArea());
+			System.out.println();
+			System.out.println("Perimeter: "+ FigRetangulo.CalcularPerimetro());
 			break;
 			
 		case 4:
+			System.exit(0);
 			break;
 		}
 		
