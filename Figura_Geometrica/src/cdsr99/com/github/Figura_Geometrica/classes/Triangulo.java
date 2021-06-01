@@ -6,16 +6,21 @@ public class Triangulo implements FiguraGeometrica {
 	private Float lado2;
 	private Float lado3;
 	
+	private Float height;
+	private Float base;
+	
 	@Override
 	public Float CalcularArea() {
 		// TODO Auto-generated method stub
-		Float area = this.lado1 + this.lado2 + this.lado3;
-		return area;
+		Float area = this.base * this.height;
+		return area/2;
 	}
+	
 	@Override
 	public Float CalcularPerimetro() {
 		// TODO Auto-generated method stub
-		return null;
+		Float area = this.lado1 + this.lado2 + this.lado3;
+		return area;
 	}
 
 	
@@ -38,6 +43,18 @@ public class Triangulo implements FiguraGeometrica {
 	}
 	public void setLado3(Float lado3) {
 		this.lado3 = lado3;
+	}
+	public Float getAltura() {
+		return height;
+	}
+	public void setHeight(Float height) {
+		this.height = height;
+	}
+	public Float getBase() {
+		return base;
+	}
+	public void setBase(Float base) {
+		this.base = base;
 	}
 	
 

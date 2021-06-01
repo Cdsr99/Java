@@ -29,9 +29,12 @@ public class Index {
 		case 1:
 			Triangulo fig = new Triangulo();
 			
-			Float l1 = 0;
-			Float l2 = 0;
-			Float l3 = 0;
+			Float l1;
+			Float l2;
+			Float l3;
+			
+			Float base;
+			Float height;
 			
 			//System.out.println("A área do triangulo é: "+ fig.CalcularL2(5f, 23f));
 			System.out.println("Enter with the side of the triangule");
@@ -45,13 +48,28 @@ public class Index {
 			System.out.println("side 2:");
 			System.out.println();
 			l2 = scan.nextFloat();
+			tri.setLado2(l2);
 			
 			System.out.println("side 3:");
 			System.out.println();
 			l3 = scan.nextFloat();
+			tri.setLado3(l3);
 			
-			System.out.println("The triangule's area is: "+ tri.CalcularArea());
+			System.out.println("Please, enter with the base:");
 			System.out.println();
+			base = scan.nextFloat();
+			tri.setBase(base);
+			
+			System.out.println("Please, enter with the height:");
+			System.out.println();
+			height = scan.nextFloat();
+			tri.setHeight(height);
+			
+			System.out.println("Triangule Status: ");
+			System.out.println();
+			System.out.println("Area: "+ tri.CalcularArea());
+			System.out.println();
+			System.out.println("Perimeter: "+ tri.CalcularPerimetro());
 			break;
 			
 		case 2:
