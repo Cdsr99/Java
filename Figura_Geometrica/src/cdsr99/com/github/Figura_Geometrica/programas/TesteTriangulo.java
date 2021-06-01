@@ -8,7 +8,7 @@ public class TesteTriangulo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Triangulo fig = new Triangulo();
-		System.out.println("A área do triangulo é: "+ fig.CalcularL2(5f, 23f));
+		
 	}
 
 }
