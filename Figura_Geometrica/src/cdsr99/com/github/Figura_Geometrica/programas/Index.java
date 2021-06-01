@@ -79,7 +79,7 @@ public class Index {
 				System.out.println("Perimeter: "+ tri.CalcularPerimetro());
 				
 				System.out.println();
-				System.out.println("Do you would like to continue? <1>Yes <2> No");
+				System.out.println("Do you would like to continue? <1>Yes <Other number> No");
 				continu = scan.nextInt();
 				if(continu == 1) {
 					ciclo = 1;
@@ -114,7 +114,7 @@ public class Index {
 				System.out.println("Perimeter: "+ FigQuadrado.CalcularPerimetro());
 				
 				System.out.println();
-				System.out.println("Do you would like to continue? <1>Yes <2> No");
+				System.out.println("Do you would like to continue? <1>Yes <Other number> No");
 				continu = scan.nextInt();
 				if(continu == 1) {
 					ciclo = 1;
@@ -150,7 +150,7 @@ public class Index {
 				System.out.println("Perimeter: "+ FigRetangulo.CalcularPerimetro());
 				
 				System.out.println();
-				System.out.println("Do you would like to continue? <1>Yes <2> No");
+				System.out.println("Do you would like to continue? <1>Yes <Other number> No");
 				continu = scan.nextInt();
 				if(continu == 1) {
 					ciclo = 1;
