@@ -1,26 +1,28 @@
 package classes;
 
+import java.math.BigInteger;
+
 public class Contact {
-	private Integer fixo;
-	private Integer celular;
+	private String fixo;
+	private String celular;
 	
-	public Contact(Integer celular) {
+	public Contact(String celular) {
 		this.celular = celular;
 	}
 
-	public Integer getFixo() {
+	public String getFixo() {
 		return fixo;
 	}
 
-	public void setFixo(Integer fixo) {
+	public void setFixo(String fixo) {
 		this.fixo = fixo;
 	}
 
-	public Integer getCelular() {
+	public String getCelular() {
 		return celular;
 	}
 
-	public void setCelular(Integer celular) {
+	public void setCelular(String celular) {
 		this.celular = celular;
 	}
 	
