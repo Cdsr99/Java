@@ -17,28 +17,28 @@ public class mediaSalto {
 		System.out.println("Insert the second jump:");
 		Float salto2 = scan.nextFloat();
 		
-		System.out.println("insert the 3° jump");
+		System.out.println("insert the 3Â° jump");
 		Float salto3 = scan.nextFloat();
 		
-		System.out.println("Insert the 4° jump");
+		System.out.println("Insert the 4Â° jump");
 		Float salto4 = scan.nextFloat();
 		
-		System.out.println("Insert the 5° jump");
+		System.out.println("Insert the 5Â° jump");
 		Float salto5 = scan.nextFloat();
 		
-		//Média
+		//MÃ©dia
 	
 		System.out.println();
 		System.out.println();
-		System.out.println("1° jump: "+salto1);
+		System.out.println("1Â° jump: "+salto1);
 		System.out.println();
-		System.out.println("2° jump: "+salto2);
+		System.out.println("2Â° jump: "+salto2);
 		System.out.println();
-		System.out.println("3° jump: "+salto3);
+		System.out.println("3Â° jump: "+salto3);
 		System.out.println();
-		System.out.println("4° jump: "+salto4);
+		System.out.println("4Â° jump: "+salto4);
 		System.out.println();
-		System.out.println("5° jump: "+salto5);
+		System.out.println("5Â° jump: "+salto5);
 		System.out.println();
 		
 		System.out.println("Final result");
