@@ -1,5 +1,5 @@
 package classes;
-
+import classes.*;
 public class Address_data {
 	
 	private String rua;
@@ -23,10 +23,10 @@ public class Address_data {
 	public void setComplemento(String complemento) {
 		this.complemento = complemento;
 	}
-	public Integer getCep() {
+	public String getCep() {
 		return cep;
 	}
-	public void setCep(Integer cep) {
+	public void setCep(String cep) {
 		this.cep = cep;
 	}
 	public String getCidade() {

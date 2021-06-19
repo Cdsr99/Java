@@ -1,5 +1,5 @@
 package classes;
-
+import classes.*;
 public class Company {
 	
 	private String empresa;

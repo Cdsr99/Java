@@ -1,14 +1,11 @@
 package classes;
 
+import classes.*;
 
-public class Contact {
+public class Contact extends Contact_Schedule{
 	private String fixo;
 	private String celular;
 	
-	public Contact(String celular) {
-		this.celular = celular;
-		
-	}
 
 	public String getFixo() {
 		return fixo;
