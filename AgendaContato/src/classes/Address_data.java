@@ -4,7 +4,7 @@ public class Address_data {
 	
 	private String rua;
 	private String complemento;
-	private Integer cep;
+	private String cep;
 	private String cidade;
 	private String estado;
 	

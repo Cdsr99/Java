@@ -16,35 +16,37 @@ public class Index {
 		Contact c1 = new Contact("1");
 		Contact c2 = new Contact("12");
 		
-		Address_data endereco = new Address_data("Rua Paulinho");
-		Address_data endereco2 = new Address_data("Rua Saulinho");
+		Address_data enderecoIns1 = new Address_data("Rua Paulinho");
+		Address_data enderecoIns2 = new Address_data("Rua Saulinho");
 		
 		
-		ArrayList<Contact> ctt1 = new ArrayList<Contact>();
-		//ctt1.add(c1);
-		ctt1.set(0,c1);
-	
-		ArrayList<Address_data> end1 = new ArrayList<Address_data>();
-		end1.add(endereco);
-		end1.add(endereco2);
+		ArrayList<String> ctt1 = new ArrayList<String>();		
+		ctt1.add("4140028922");
+		ctt1.add("41988548118");
 		
+		ArrayList<String> end1 = new ArrayList<String>();
+		end1.add("Rua Paulinho");
+		end1.add("Rua Saulinho");
+		
+		
+	    for (int i = 0; i < ctt1.size(); i++) {
+		    
+	    	String contato = ctt1.get(i);
+	    	String endereco = end1.get(i);
+	    	
+	    	//System.out.println(cars.get(i));
+	    	Contact_Schedule contato_agenda1 = new Contact_Schedule("Rodrigues",contato,endereco); 
+	        
+	        System.out.println((i+1)+"st contact: " + "Nome: " + contato_agenda1.getNome());
+	        System.out.println((i+1)+"st contact: " + "Nmro: " + contato_agenda1.getContato());
+	        System.out.println((i+1)+"st contact: " + "Ende: " + contato_agenda1.getEndereco());
+	        System.out.println();
+	    	
+		    }
 		
 	    
-	    	Contact_Schedule contato_agenda1 = new Contact_Schedule("Rodrigues",ctt1,end1 ); 
-	        
-	        System.out.println("1st contact: " + "Nome: " + contato_agenda1.getNome());
-	        System.out.println("1st contact: " + "Nmro: " + contato_agenda1.getContato());
-	        System.out.println("1st contact: " + "Ender: " + contato_agenda1.getEndereco());
-	        
-	        ArrayList<String> cars = new ArrayList<String>();
-	        cars.add("Volvo");
-	        cars.add("BMW");
-	        cars.add("Ford");
-	        cars.add("Mazda");
-	        for (int i = 0; i < cars.size(); i++) {
-	          System.out.println(cars.get(i));
-	        }
 
+	        
         
 
         

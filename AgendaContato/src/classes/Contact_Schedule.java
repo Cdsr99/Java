@@ -6,11 +6,11 @@ public class Contact_Schedule {
 	private String nome;
 	private String sobrenome;
 	private String descricao;
-	private ArrayList<Contact> contato;
-	private ArrayList<Address_data> endereco;
+	private String contato;
+	private String endereco;
 	
 	
-	public Contact_Schedule(String nome, ArrayList<Contact> contato, ArrayList<Address_data> endereco) {
+	public Contact_Schedule(String nome, String contato, String endereco) {
 		this.nome = nome;
 		this.contato = contato;
 		this.endereco = endereco;
@@ -47,22 +47,22 @@ public class Contact_Schedule {
 	}
 
 
-	public ArrayList<Contact> getContato() {
-		return contato;
+	public String getContato() {
+		return this.contato;
 	}
 
 
-	public void setContato(ArrayList<Contact> contato) {
+	public void setContato(String contato) {
 		this.contato = contato;
 	}
 
 
-	public ArrayList<Address_data> getEndereco() {
+	public String getEndereco() {
 		return endereco;
 	}
 
 
-	public void setEndereco(ArrayList<Address_data> endereco) {
+	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
 	

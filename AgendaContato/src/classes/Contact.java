@@ -7,6 +7,7 @@ public class Contact {
 	
 	public Contact(String celular) {
 		this.celular = celular;
+		
 	}
 
 	public String getFixo() {
