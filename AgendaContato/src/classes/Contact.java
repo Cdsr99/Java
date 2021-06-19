@@ -1,6 +1,5 @@
 package classes;
 
-import java.math.BigInteger;
 
 public class Contact {
 	private String fixo;

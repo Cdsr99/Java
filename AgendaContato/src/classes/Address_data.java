@@ -8,6 +8,9 @@ public class Address_data {
 	private String cidade;
 	private String estado;
 	
+	public Address_data(String rua) {
+		this.rua = rua;
+	}
 	public String getRua() {
 		return rua;
 	}
