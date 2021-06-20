@@ -3,7 +3,7 @@ package cdsr99.com.github.Classes;
 import java.util.ArrayList;
 import cdsr99.com.github.Classes.*;
 
-public class Contact_Schedule {
+public class Contact_Schedule extends Company{
 	private String nome;
 	private String sobrenome;
 	private String descricao;
@@ -13,6 +13,7 @@ public class Contact_Schedule {
 
 	
 	public Contact_Schedule(String nome, ArrayList<Contact> contato, ArrayList<Address_data> endereco) {
+		
 		this.nome = nome;
 		this.contato = contato;
 		this.endereco = endereco;

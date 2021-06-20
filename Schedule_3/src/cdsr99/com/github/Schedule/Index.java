@@ -27,8 +27,8 @@ public class Index {
 		
 		Contact_Schedule agenda = new Contact_Schedule("Caio",A_cont1,A_cont2);
 		
-		agenda.getNome();
-		agenda.getContato();
+		System.out.println("Name: " + agenda.getNome().get(0));
+		System.out.println("Contact: " + agenda.getContato().get(0));
 		
 		
 		
