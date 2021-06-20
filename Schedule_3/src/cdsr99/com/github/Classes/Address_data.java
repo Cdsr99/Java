@@ -2,7 +2,7 @@ package cdsr99.com.github.Classes;
 
 public class Address_data {
 
-	private String rua;
+	protected String rua;
 	private String complemento;
 	private String cep;
 	private String cidade;

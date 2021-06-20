@@ -3,7 +3,7 @@ package cdsr99.com.github.Classes;
 import java.util.ArrayList;
 import cdsr99.com.github.Classes.*;
 
-public class Contact_Schedule extends Company{
+public class Contact_Schedule {
 	private String nome;
 	private String sobrenome;
 	private String descricao;

@@ -15,20 +15,21 @@ public class Index {
 		Address_data end2 = new Address_data("Rua Tiete");
 		
 		ArrayList<Contact> A_cont1 = new ArrayList<>();
-		ArrayList<Address_data> A_cont2 = new ArrayList<>();
+		ArrayList<Address_data> A_end1 = new ArrayList<>();
 		
 		//Add those datas in the Array
 		
 		A_cont1.add(contato1);
 		A_cont1.add(contato2);
 		
-		A_cont2.add(end1);
-		A_cont2.add(end2);
+		A_end1.add(end1);
+		A_end1.add(end2);
 		
-		Contact_Schedule agenda = new Contact_Schedule("Caio",A_cont1,A_cont2);
+		Contact_Schedule agenda = new Contact_Schedule("Caio",A_cont1,A_end1);
 		
-		System.out.println("Name: " + agenda.getNome().get(0));
-		System.out.println("Contact: " + agenda.getContato().get(0));
+		System.out.println("Name: " + agenda.getNome());
+		System.out.println("Contact: " + agenda.getContato().get(1).getCelular());
+		System.out.println("Address: " + agenda.getEndereco().get(1).getRua());
 		
 		
 		
