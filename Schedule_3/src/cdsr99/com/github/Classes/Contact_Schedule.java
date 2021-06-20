@@ -12,6 +12,11 @@ public class Contact_Schedule {
 	
 
 	
+	public Contact_Schedule(String nome, ArrayList<Contact> contato, ArrayList<Address_data> endereco) {
+		this.nome = nome;
+		this.contato = contato;
+		this.endereco = endereco;
+	}
 	public String getNome() {
 		return nome;
 	}
